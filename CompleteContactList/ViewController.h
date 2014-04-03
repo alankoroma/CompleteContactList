@@ -1,0 +1,13 @@
+//
+//  ViewController.h
+//  CompleteContactList
+//
+//  Created by Alan Koroma on 3/04/2014.
+//  Copyright (c) 2014 Alan Koroma. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ViewController : UIViewController
+
+@end
