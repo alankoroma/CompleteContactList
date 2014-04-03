@@ -21,6 +21,10 @@
 		E74E74D918ED3B2C00018761 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74E74BB18ED3B2C00018761 /* UIKit.framework */; };
 		E74E74E118ED3B2C00018761 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E74E74DF18ED3B2C00018761 /* InfoPlist.strings */; };
 		E74E74E318ED3B2C00018761 /* CompleteContactListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E74E74E218ED3B2C00018761 /* CompleteContactListTests.m */; };
+		E74E74EE18ED504800018761 /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = E74E74ED18ED504800018761 /* Contacts.m */; };
+		E74E74EF18ED504800018761 /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = E74E74ED18ED504800018761 /* Contacts.m */; };
+		E74E74F218ED54D800018761 /* addContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74E74F118ED54D800018761 /* addContactViewController.m */; };
+		E74E74F318ED54D800018761 /* addContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74E74F118ED54D800018761 /* addContactViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		E74E74DE18ED3B2C00018761 /* CompleteContactListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CompleteContactListTests-Info.plist"; sourceTree = "<group>"; };
 		E74E74E018ED3B2C00018761 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E74E74E218ED3B2C00018761 /* CompleteContactListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompleteContactListTests.m; sourceTree = "<group>"; };
+		E74E74EC18ED504800018761 /* Contacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contacts.h; sourceTree = "<group>"; };
+		E74E74ED18ED504800018761 /* Contacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacts.m; sourceTree = "<group>"; };
+		E74E74F018ED54D800018761 /* addContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addContactViewController.h; sourceTree = "<group>"; };
+		E74E74F118ED54D800018761 /* addContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addContactViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,10 @@
 				E74E74CD18ED3B2C00018761 /* ViewController.m */,
 				E74E74CF18ED3B2C00018761 /* Images.xcassets */,
 				E74E74BE18ED3B2C00018761 /* Supporting Files */,
+				E74E74EC18ED504800018761 /* Contacts.h */,
+				E74E74ED18ED504800018761 /* Contacts.m */,
+				E74E74F018ED54D800018761 /* addContactViewController.h */,
+				E74E74F118ED54D800018761 /* addContactViewController.m */,
 			);
 			path = CompleteContactList;
 			sourceTree = "<group>";
@@ -249,9 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74E74EE18ED504800018761 /* Contacts.m in Sources */,
 				E74E74CE18ED3B2C00018761 /* ViewController.m in Sources */,
 				E74E74C818ED3B2C00018761 /* AppDelegate.m in Sources */,
 				E74E74C418ED3B2C00018761 /* main.m in Sources */,
+				E74E74F218ED54D800018761 /* addContactViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74E74F318ED54D800018761 /* addContactViewController.m in Sources */,
+				E74E74EF18ED504800018761 /* Contacts.m in Sources */,
 				E74E74E318ED3B2C00018761 /* CompleteContactListTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
