@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *addressTextField;
 
 //Buttons
+
 - (IBAction)doneButton:(id)sender;
 
 
@@ -62,6 +63,14 @@
 }
 */
 
+
+
+- (IBAction)addContact:(UIBarButtonItem *)sender {
+    
+}
+
+
+
 - (IBAction)doneButton:(id)sender {
     self.contact.fName = self.fNameTextField.text;
     self.contact.lName = self.lNameTextField.text;
@@ -70,13 +79,5 @@
     [self.delegate addContactWillFinishWithDoneButtonPressed:self];
     
     NSLog(@"%@", self.contact.fName);
-    
 }
-
-- (IBAction)addContact:(UIBarButtonItem *)sender {
-    
-}
-
-
-
 @end

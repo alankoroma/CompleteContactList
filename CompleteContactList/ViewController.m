@@ -57,6 +57,13 @@
     [self performSegueWithIdentifier:@"showDetail" sender:(contact)];
 }
 
+- (void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    // Delete row function
+    [self.contacts removeObjectAtIndex:indexPath.row];
+    [self.tableView reloadData];
+}
+
 #pragma mark - Segue
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

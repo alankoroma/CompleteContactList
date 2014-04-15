@@ -71,7 +71,7 @@
                     <navigationItem key="navigationItem" id="rd9-PE-an6">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="HZg-3y-ly4">
                             <connections>
-                                <action selector="doneButton:" destination="uEc-AH-OaZ" id="H7D-8K-pSb"/>
+                                <action selector="doneButton:" destination="uEc-AH-OaZ" id="7dZ-i1-pQK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="itE-TT-xKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622" y="-97"/>
+            <point key="canvasLocation" x="822" y="-245"/>
         </scene>
         <!--View Controller - Contact List-->
         <scene sceneID="uUk-vH-2nE">
@@ -147,7 +147,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgF-ji-KxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6" y="-110"/>
+            <point key="canvasLocation" x="300" y="-258"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lBb-QW-Fsj">
@@ -165,7 +165,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awz-OA-fww" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-598" y="166"/>
+            <point key="canvasLocation" x="-228" y="-308"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
