@@ -69,7 +69,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rd9-PE-an6">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="HZg-3y-ly4">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="HZg-3y-ly4">
                             <connections>
                                 <action selector="doneButton:" destination="uEc-AH-OaZ" id="7dZ-i1-pQK"/>
                             </connections>
