@@ -19,7 +19,7 @@
 
 //Buttons
 
-- (IBAction)doneButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *cancelButton;
 
 
 @end
@@ -39,11 +39,36 @@
 {
     [super viewDidLoad];
    
-    self.fNameTextField.text = self.contact.fName;
-    self.lNameTextField.text = self.contact.lName;
-    self.pNumberTextField.text = self.contact.phoneNumber;
-    self.addressTextField.text = self.contact.address;
+    if (self.contacts == nil)
+    {
+        self.contacts = [[Contacts alloc] init];
+    }
     
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    //load data when detail view loaded
+    self.fNameTextField.text = self.contacts.fName;
+    self.lNameTextField.text = self.contacts.lName;
+    self.pNumberTextField.text = self.contacts.phoneNumber;
+    self.addressTextField.text = self.contacts.address;
+    if (self.contacts.fName.length == 0){
+        
+    }
+    else{
+        self.navigationItem.title = self.contacts.fName;
+    }
+}
+
+- (void) viewWillDisappear:(BOOL)animated
+{
+    //send data when it disappears
+    self.contacts.fName = self.fNameTextField.text;
+    self.contacts.lName = self.lNameTextField.text;
+    self.contacts.phoneNumber = self.pNumberTextField.text;
+    self.contacts.address = self.addressTextField.text;
+    [self.delegate addContactWillFinishWithDoneButtonPressed:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,6 +76,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)cancelButton:(id)sender {
+    [self.delegate cancelMe];
+}
+
 
 /*
 #pragma mark - Navigation
@@ -63,21 +93,4 @@
 }
 */
 
-
-
-- (IBAction)addContact:(UIBarButtonItem *)sender {
-    
-}
-
-
-
-- (IBAction)doneButton:(id)sender {
-    self.contact.fName = self.fNameTextField.text;
-    self.contact.lName = self.lNameTextField.text;
-    self.contact.phoneNumber = self.pNumberTextField.text;
-    self.contact.address = self.addressTextField.text;
-    [self.delegate addContactWillFinishWithDoneButtonPressed:self];
-    
-    NSLog(@"%@", self.contact.fName);
-}
 @end

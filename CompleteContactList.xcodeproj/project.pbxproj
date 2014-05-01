@@ -472,6 +472,7 @@
 				E74E74E818ED3B2C00018761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E74E74E918ED3B2C00018761 /* Build configuration list for PBXNativeTarget "CompleteContactListTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +481,7 @@
 				E74E74EB18ED3B2C00018761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

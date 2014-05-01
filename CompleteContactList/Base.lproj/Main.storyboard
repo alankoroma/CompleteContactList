@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="auZ-8o-CpW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="auZ-8o-CpW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -69,14 +69,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rd9-PE-an6">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="HZg-3y-ly4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="Yqn-mB-3At">
                             <connections>
-                                <action selector="doneButton:" destination="uEc-AH-OaZ" id="7dZ-i1-pQK"/>
+                                <action selector="cancelButton:" destination="uEc-AH-OaZ" id="Xot-IX-jYC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="addressTextField" destination="Hgv-Ho-hOh" id="rma-is-CKH"/>
+                        <outlet property="cancelButton" destination="Yqn-mB-3At" id="aS4-ry-RTu"/>
                         <outlet property="fNameTextField" destination="IzX-EU-GIx" id="iMM-SO-awv"/>
                         <outlet property="lNameTextField" destination="kla-qm-xyn" id="hD9-8q-6T9"/>
                         <outlet property="pNumberTextField" destination="ULd-NI-gAQ" id="CGW-Nl-XXe"/>
@@ -141,8 +142,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="addButton" destination="aMP-Oj-dAX" id="67z-ea-aPK"/>
-                        <outlet property="editButton" destination="gLK-bh-pJd" id="BNo-dq-9Oa"/>
+                        <outlet property="addButton" destination="aMP-Oj-dAX" id="ILG-QK-clM"/>
+                        <outlet property="editButton" destination="gLK-bh-pJd" id="2kR-1w-cgv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgF-ji-KxL" userLabel="First Responder" sceneMemberID="firstResponder"/>

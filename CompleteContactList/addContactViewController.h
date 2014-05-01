@@ -15,12 +15,13 @@
 
 - (void) addContactWillFinishWithDoneButtonPressed: (addContactViewController *) addContact;
 
+- (void) cancelMe;
 
 @end
 
 @interface addContactViewController : UIViewController
 
 @property id<addContactViewControllerDelegate> delegate;
-@property Contacts *contact;
+@property Contacts *contacts;
 
 @end
